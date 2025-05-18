@@ -10,70 +10,75 @@
         }, 1);
     };
     spinner(0);
-    
-    
-    // Initiate the wowjs
-    new WOW().init();
 
 
     // Sticky Navbar
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            $('.sticky-top').addClass('shadow-sm').css('top', '0px');
+        if ($(this).scrollTop() > 45) {
+            $('.navbar').addClass('sticky-top shadow-sm');
         } else {
-            $('.sticky-top').removeClass('shadow-sm').css('top', '-100px');
+            $('.navbar').removeClass('sticky-top shadow-sm');
         }
     });
 
 
-    // Hero Header carousel
-    $(".header-carousel").owlCarousel({
-        animateOut: 'slideOutDown',
-        items: 1,
+    // International Tour carousel
+    $(".InternationalTour-carousel").owlCarousel({
         autoplay: true,
-        smartSpeed: 500,
-        dots: false,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-down"></i>'
-        ],
-    });
-
-
-    // attractions carousel
-    $(".attractions-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 2000,
+        smartSpeed: 1000,
         center: false,
-        dots: false,
+        dots: true,
         loop: true,
         margin: 25,
-        nav : true,
+        nav : false,
         navText : [
-            '<i class="fa fa-angle-right"></i>',
-            '<i class="fa fa-angle-left"></i>'
+            '<i class="bi bi-arrow-left"></i>',
+            '<i class="bi bi-arrow-right"></i>'
         ],
         responsiveClass: true,
         responsive: {
             0:{
                 items:1
             },
-            576:{
+            768:{
                 items:2
+            },
+            992:{
+                items:2
+            },
+            1200:{
+                items:3
+            }
+        }
+    });
+
+
+    // packages carousel
+    $(".packages-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1000,
+        center: false,
+        dots: false,
+        loop: true,
+        margin: 25,
+        nav : true,
+        navText : [
+            '<i class="bi bi-arrow-left"></i>',
+            '<i class="bi bi-arrow-right"></i>'
+        ],
+        responsiveClass: true,
+        responsive: {
+            0:{
+                items:1
             },
             768:{
                 items:2
             },
             992:{
-                items:3
+                items:2
             },
             1200:{
-                items:4
-            },
-            1400:{
-                items:4
+                items:3
             }
         }
     });
@@ -82,44 +87,34 @@
     // testimonial carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
-        smartSpeed: 1500,
-        center: false,
+        smartSpeed: 1000,
+        center: true,
         dots: true,
         loop: true,
         margin: 25,
         nav : true,
         navText : [
-            '<i class="fa fa-angle-right"></i>',
-            '<i class="fa fa-angle-left"></i>'
+            '<i class="bi bi-arrow-left"></i>',
+            '<i class="bi bi-arrow-right"></i>'
         ],
         responsiveClass: true,
         responsive: {
             0:{
                 items:1
             },
-            576:{
-                items:1
-            },
             768:{
-                items:1
+                items:2
             },
             992:{
-                items:1
+                items:2
             },
             1200:{
-                items:1
+                items:3
             }
         }
     });
 
-
-    // Facts counter
-    $('[data-toggle="counter-up"]').counterUp({
-        delay: 5,
-        time: 2000
-    });
-
-
+    
    // Back to top button
    $(window).scroll(function () {
     if ($(this).scrollTop() > 300) {
@@ -131,8 +126,7 @@
     $('.back-to-top').click(function () {
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
-    });
-
+    }); 
 
 })(jQuery);
 
