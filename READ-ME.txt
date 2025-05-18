@@ -4,6 +4,6 @@
 
   =>  Template License : https://adilasad.com/license (or read the LICENSE.txt file)
 
-  =>  Template Author  : HTML Codex
+  =>  Template Author  : Adil Asad
 
-  =>  Author Website   : https://htmlcodex.com
+  =>  Author Website   : https://adilasad.com
