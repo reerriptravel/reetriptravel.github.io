@@ -14,12 +14,16 @@
 
     // Sticky Navbar
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 45) {
-            $('.navbar').addClass('sticky-top shadow-sm');
-        } else {
-            $('.navbar').removeClass('sticky-top shadow-sm');
-        }
-    });
+    const logo = document.getElementById('brand-logo');
+
+    if ($(this).scrollTop() > 45) {
+        $('.navbar').addClass('sticky-top shadow-sm');
+        logo.src = 'img/reeTrip-logo.png'; // Dark logo
+    } else {
+        $('.navbar').removeClass('sticky-top shadow-sm');
+        logo.src = 'img/reeTrip-logo-white.png'; // White logo
+    }
+});
 
 
     // International Tour carousel

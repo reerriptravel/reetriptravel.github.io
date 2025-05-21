@@ -1261,6 +1261,11 @@
 ;
 }
 
+
+
+
+
+
 /* From 426px to 768px */
 @media (min-width: 426px) and (max-width: 768px) {
     .text-muted {
