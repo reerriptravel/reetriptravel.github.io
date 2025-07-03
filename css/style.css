@@ -1290,3 +1290,22 @@
         margin: -15px 0 0 3.4rem;
     }
 }
+/* comment box css */
+
+/* Testimonial Carousel Container */
+.testimonial-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 360px;
+    /* Ensures all testimonial cards are uniform height */
+}
+
+.testimonial-comment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 191px;
+    /* Makes all comment boxes the same height */
+    text-align: center;
+}
