@@ -590,7 +590,7 @@
     left: 50%; 
     transform: translateX(-50%);
     display: inline-block;
-    background: var(--bs-primary);
+    background: #13357ba6;
     color: var(--bs-white);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px; 
