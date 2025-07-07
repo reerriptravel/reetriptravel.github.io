@@ -1309,3 +1309,20 @@
     /* Makes all comment boxes the same height */
     text-align: center;
 }
+.packages-carousel .owl-stage {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.packages-carousel .packages-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.packages-item .packages-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
